@@ -995,7 +995,7 @@ Nykyinen lyhennys: ${fmt(currentHigh)}/kk + lisämaksu ${fmt(extra)}/kk = yhteen
 
 • <strong>Puskurirahasto (${fmt(puskuriMonthly)}/kk):</strong> Kasvata säästötilin saldo ${fmt(emergencyStage2Target)}:een (3 kk pakolliset menot). Tavoite täyttyy arviolta ${months3} kuukaudessa. Puskurirahasto tulee aina säilyttää säästötilillä — ei sijoituksissa.
 
-• <strong>ETF-sijoittaminen (${fmt(etfStart)}/kk):</strong> Aloita kuukausisäästäminen indeksirahastoihin. Valitse laaja maailma-ETF, esim. iShares Core MSCI World tai Vanguard FTSE All-World.`;
+• <strong>ETF-sijoittaminen (${fmt(etfStart)}/kk):</strong> Aloita kuukausisäästäminen indeksirahastoihin. Valitse esim. <strong>Xtrackers S&amp;P 500 ETF 4C</strong> tai <strong>iShares Core MSCI World UCITS ETF USD</strong>.`;
     step3Amount = `${fmt(puskuriMonthly)} + ${fmt(etfStart)} / kk = ${fmt(step3Total)} / kk`;
   } else {
     const etfMonthly = step3Total;
@@ -1005,7 +1005,7 @@ Nykyinen lyhennys: ${fmt(currentHigh)}/kk + lisämaksu ${fmt(extra)}/kk = yhteen
       : '';
     step3Desc = `Puskurirahastosi on jo kunnossa! Kaikki vapaa raha${freedNote} ohjataan sijoittamiseen.
 
-• <strong>ETF-sijoittaminen (${fmt(etfMonthly)}/kk):</strong> Aloita kuukausisäästäminen indeksirahastoihin. Valitse laaja maailma-ETF, esim. iShares Core MSCI World tai Vanguard FTSE All-World.`;
+• <strong>ETF-sijoittaminen (${fmt(etfMonthly)}/kk):</strong> Aloita kuukausisäästäminen indeksirahastoihin. Valitse esim. <strong>Xtrackers S&amp;P 500 ETF 4C</strong> tai <strong>iShares Core MSCI World UCITS ETF USD</strong>.`;
     step3Amount = fmt(etfMonthly) + ' / kk';
   }
 
@@ -1138,7 +1138,7 @@ Nykyinen lyhennys: ${fmt(currentHigh)}/kk + lisämaksu ${fmt(extra)}/kk = yhteen
       <div class="timeline-title">💛 Käytännön vinkit</div>
       <div class="tip-item"><div class="tip-num">1</div><div>Automatisoi säästäminen: aseta automaattinen siirto tai tee siirrot manuaalisesti heti palkkapäivänä. Et kaipaa rahaa, jota et koskaan näe.</div></div>
       <div class="tip-item"><div class="tip-num">2</div><div>Valitse hätäpuskurille ja puskurirahastollesi <strong>säästötili ilman nostorajoitusta</strong>. Pohjoismaisia vaihtoehtoja ovat esim. BigBank, Bank Norwegian ja Svea Bank, jotka tarjoavat kilpailukykyistä korkoa kotimaisiin pankkeihin verrattuna. Tarkista voimassa oleva korko aina suoraan pankin sivuilta, sillä se vaihtelee markkinatilanteen mukaan. Varmista, että talletus <strong>kuuluu talletussuojan piiriin</strong> (100 000 € / tallettaja). Valitse säästötili, jossa ei ole kuukausimaksua tai nostokuluja. Näin säästösi ovat turvassa ja käytettävissä koska vain ilman kuluja.</div></div>
-      <div class="tip-item"><div class="tip-num">3</div><div>ETF-sijoittamiseen sopii esim. <strong>Nordnet</strong>. Valitse laaja hajautus: iShares Core MSCI World tai Vanguard FTSE All-World. Käytä automaattista kuukausisäästötoimintoa, jos mahdollista.</div></div>
+      <div class="tip-item"><div class="tip-num">3</div><div>ETF-sijoittamiseen sopii esim. <strong>Nordnet</strong>. Valitse esim. <strong>Xtrackers S&amp;P 500 ETF 4C</strong> tai <strong>iShares Core MSCI World UCITS ETF USD</strong>. Käytä automaattista kuukausisäästötoimintoa, jos mahdollista.</div></div>
       <div class="tip-item"><div class="tip-num">4</div><div>Älä tarkista sijoituksia päivittäin. Pitkäjänteisyys on menestyksen salaisuus — anna koronkoron tehdä työtä.</div></div>
       <div class="tip-item"><div class="tip-num">5</div><div>Pienikin aloitus on voitto. 50 €/kk on parempi kuin 0 €/kk. Aloita heti ja kasvata summaa ajan myötä.</div></div>
     </div>`;
