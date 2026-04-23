@@ -1089,7 +1089,8 @@ Nykyinen lyhennys: ${fmt(currentHigh)}/kk + lisämaksu ${fmt(extra)}/kk = yhteen
     const etfStartMonth = phase1Months + phase2Months;
     const etfMonths = Math.max(0, months - etfStartMonth);
     const r = 0.07 / 12;
-    const simEtf = investments + (etfMonthlyForSnapshot > 0 && etfMonths > 0
+    const simEtf = investments * Math.pow(1+r, etfMonths)
+      + (etfMonthlyForSnapshot > 0 && etfMonths > 0
       ? etfMonthlyForSnapshot * ((Math.pow(1+r, etfMonths) - 1) / r) : 0);
 
     return {
