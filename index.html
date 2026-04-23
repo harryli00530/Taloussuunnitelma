@@ -1048,7 +1048,7 @@ Nykyinen lyhennys: ${fmt(currentHigh)}/kk + lisämaksu ${fmt(extra)}/kk = yhteen
   const highDebtMonthly = highDebtStep.length > 0
     ? (highDebtCurrentPayments + free)
     : 0;
-  const etfMonthlyForSnapshot = stage2Done ? step3Total : step3Total / 2;
+  const etfMonthlyForSnapshot = step3Total;
   const puskuriMonthlyForSnapshot = stage2Done ? 0 : step3Total / 2;
 
   const snapYears = [0, 1, 2, 3, 4, 5, 10];
